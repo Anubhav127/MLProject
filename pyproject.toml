@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MLProject"
+version = "0.0.1"
+authors = [
+  {name = "Anubhav", email = "anu.verma712@gmail.com"},
+]
+
+requires-python = ">=3.8"
+
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = {find = {}}
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
