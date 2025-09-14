@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Deployment App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .predict-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        .predict-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .predict-btn:active {
+            transform: translateY(0);
+        }
+        
+        .features {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .feature-item {
+            margin: 0.5rem 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        .icon {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Model Deployment App</h1>
+        <p class="subtitle">
+            Predict student performance using our advanced machine learning model. 
+            Simply provide the required information and get instant predictions.
+        </p>
+        
+        <a href="/predict" class="predict-btn">
+            🎯 Start Prediction
+        </a>
+        
+        <div class="features">
+            <div class="feature-item">
+                <span class="icon">📊</span>
+                Advanced ML Algorithm
+            </div>
+            <div class="feature-item">
+                <span class="icon">⚡</span>
+                Instant Results
+            </div>
+            <div class="feature-item">
+                <span class="icon">🎯</span>
+                High Accuracy
+            </div>
+        </div>
+    </div>
+</body>
+</html>
